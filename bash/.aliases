@@ -1,0 +1,4 @@
+#php
+
+alias sf="php bin/console "
+
