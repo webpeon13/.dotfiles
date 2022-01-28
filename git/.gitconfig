@@ -1,0 +1,15 @@
+[user]
+	email = webpeon13@gmail.com
+	name = Web Peon
+
+[alias]
+	s = status
+	cm = commit -m
+	ri = rebase -i
+	ca = commit --amend
+[core]
+	editor = vim
+	#excludesfile = HOME_DIR/.gitignore_global
+[pull]
+	ff = only
+
