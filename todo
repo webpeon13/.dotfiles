@@ -1,5 +1,21 @@
-For git, use link instead of copy;
+For git, use link instead of copy; NVM ~ use include since you need to overwrite stuff
 
 Use $HOME instead of ~
 
 Config VIM
+
+Add #!/bin/bash to all files that need it
+
+
+## Use this
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# vim
+ln -s ${BASEDIR}/vimrc ~/.vimrc
+ln -s ${BASEDIR}/vim/ ~/.vim
+
+# zsh
+ln -s ${BASEDIR}/zshrc ~/.zshrc
+
+# git
+ln -s ${BASEDIR}/gitconfig ~/.gitconfig

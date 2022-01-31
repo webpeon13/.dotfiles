@@ -4,10 +4,13 @@
 # Include .profile
 if [ -f ~/.bashrc ] && [ $(grep -c "^##Bash profiles$" ~/.bashrc) -eq 0 ];
 then
-    echo 'Installing bash profiles'	
+    echo 'Building bash profile';
+    ~/.dotfiles/build_profile.sh;
+
+    echo 'Including profiles in .bashrc'    
     echo '##Bash profiles' >> ~/.bashrc;
     # Assumes .dotfiles are in home dir
-    echo '. ~/.dotfiles/.profile' >> ~/.bashrc;
+    echo '. ~/.dotfiles/.profile_build' >> ~/.bashrc;
     echo '' >> ~/.bashrc
 else
     echo 'Bash profile skipped'

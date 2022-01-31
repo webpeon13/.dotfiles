@@ -1,1 +1,6 @@
-bash/projects.sh
+#Some aliases should not be commited to version controll
+bash/projects/
+
+#Always build it using script, never commit
+.profile_build*
+

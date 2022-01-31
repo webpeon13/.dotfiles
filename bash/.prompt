@@ -1,4 +1,4 @@
-
+#!/bin/bash
 ## Terminal Prompt
 
 # get current branch in git repo
